@@ -1,35 +1,26 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto 1</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Detalhes do Projeto 1</h1>
-    <nav>
-      <a href="index.html">Início</a>
-    </nav>
-  </header>
+<section id="projetos">
+  <h2>Projetos</h2>
+  <ul>
+    <li>
+      <a href="#" onclick="toggleProjeto1()">Projeto 1</a> - Clique para ver detalhes.
+      <div id="conteudoProjeto1" style="display: none; margin-top: 10px;">
+        <h3>Descrição</h3>
+        <p>Este projeto consiste em desenvolver uma aplicação para controle de estoque.</p>
 
-  <section>
-    <h2>Descrição</h2>
-    <p>Este projeto consiste em desenvolver uma aplicação para controle de estoque.</p>
-  </section>
+        <h3>Funcionalidades</h3>
+        <ul>
+          <li>Adicionar, editar e excluir produtos.</li>
+          <li>Gerar relatórios em PDF.</li>
+          <li>Notificar quando o estoque está baixo.</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</section>
 
-  <section>
-    <h2>Funcionalidades</h2>
-    <ul>
-      <li>Adicionar, editar e excluir produtos.</li>
-      <li>Gerar relatórios em PDF.</li>
-      <li>Notificar quando o estoque está baixo.</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Seu Nome</p>
-  </footer>
-</body>
-</html>
+<script>
+  function toggleProjeto1() {
+    const conteudo = document.getElementById('conteudoProjeto1');
+    conteudo.style.display = conteudo.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
