@@ -1,32 +1,52 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Site</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Bem-vindo ao Meu Site</h1>
-    <nav>
-      <a href="#introducao">Introdução</a>
-      <a href="#capitulos">Capítulos</a>
-    </nav>
-  </header>
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
 
-  <section id="introducao">
-    <h2>Introdução</h2>
-    <p>Este é um exemplo de site simples com GitHub Pages.</p>
-  </section>
+/* Cabeçalho */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
 
-  <section id="capitulos">
-    <h2>Capítulos</h2>
-    <p>Aqui você pode adicionar conteúdo por capítulos ou seções.</p>
-  </section>
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-  <footer>
-    <p>&copy; 2024 Meu Nome</p>
-  </footer>
-</body>
-</html>
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Seções */
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #f4f4f4;
+  padding-bottom: 5px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
